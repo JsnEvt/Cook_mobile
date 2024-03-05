@@ -29,11 +29,11 @@ export function Ingredients({ ingredients }: Props) {
   }
 
   function handleSearch() {
-    router.navigate("/recipes/")
+    router.navigate("/recipes/" + selected)
   }
 
   useEffect(() => {
-    services.ingredients.findall().then(setIngredients_list)
+    services.ingredients.findAll().then(setIngredients_list)
   })
 
   return (
