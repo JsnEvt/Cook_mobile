@@ -1,7 +1,8 @@
-import { FlatList, Image, Pressable, ScrollView, Text } from 'react-native';
+import { ScrollView, Alert } from 'react-native';
 import { styles } from './styles';
 import { Ingredient } from '../Ingredient';
 import { useState } from 'react';
+import { Selected } from '../Selected';
 
 export function Ingredients() {
   const [selected, setSelected] = useState<string[]>([])
@@ -11,8 +12,15 @@ export function Ingredients() {
       return setSelected((state) => state.filter((item) => item !== value))
     }
     setSelected((state) => [...state, value])
-    console.log(selected)
   }
+
+  function handleClearSelected() {
+    Alert.alert("Limpar", "Deseja limpar tudo?", [
+      { text: "Não", style: "cancel" },
+      { text: "Sim", onPress: () => setSelected([]) }
+    ])
+  }
+
   return (
     <ScrollView
       contentContainerStyle={styles.container}
@@ -26,6 +34,14 @@ export function Ingredients() {
           selected={selected.includes(String(index))}
           onPress={() => handleToggleSelected(String(index))} />
       ))}
+      {
+        selected.length > 0 && (
+          <Selected
+            quantity={selected.length}
+            onClear={handleClearSelected}
+            onSearch={() => { }}
+          />
+        )}
 
     </ScrollView>
   )

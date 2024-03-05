@@ -2,6 +2,7 @@ import { Text, View } from 'react-native';
 import { styles } from "./styles"
 import { Ingredients } from '@/components/Ingredients';
 import { useState } from 'react';
+import { Selected } from '@/components/Selected';
 
 
 export default function Index() {
