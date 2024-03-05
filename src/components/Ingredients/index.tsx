@@ -1,10 +1,15 @@
 import { ScrollView, Alert } from 'react-native';
+import { router } from "expo-router"
 import { styles } from './styles';
-import { Ingredient } from '../Ingredient';
+import { Ingredient, IngredientsProps } from '../Ingredient';
 import { useState } from 'react';
 import { Selected } from '../Selected';
 
-export function Ingredients() {
+type Props = {
+  ingredients: IngredientsProps[]
+}
+
+export function Ingredients({ ingredients }: Props) {
   const [selected, setSelected] = useState<string[]>([])
 
   function handleToggleSelected(value: string) {
@@ -19,6 +24,10 @@ export function Ingredients() {
       { text: "Não", style: "cancel" },
       { text: "Sim", onPress: () => setSelected([]) }
     ])
+  }
+
+  function handleSearch() {
+    router.navigate("/recipes/")
   }
 
   return (
@@ -39,7 +48,7 @@ export function Ingredients() {
           <Selected
             quantity={selected.length}
             onClear={handleClearSelected}
-            onSearch={() => { }}
+            onSearch={handleSearch}
           />
         )}
 
