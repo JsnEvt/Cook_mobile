@@ -41,9 +41,9 @@ O layout da aplicação está disponível no Figma:
 ### Mobile
 
 <p align="center">
-  <img alt="home" title="home" src="https://github.com/GuilhaoF/cook-app/assets/67026555/3148d80d-44da-451a-8992-0f1544631076" width="200px">
-  <img alt="receitas" title="receitas" src="https://github.com/GuilhaoF/cook-app/assets/67026555/29a287b4-59e1-4c7e-bfb1-a22734d01fcc" width="200px">
-  <img alt="receitas-modos" title="modos de preparo" src="https://github.com/GuilhaoF/cook-app/assets/67026555/c7d9753a-4218-4e2b-8016-d52b6d42ccee" width="200px">
+  <img alt="home" title="home" src="https://github.com/JsnEvt/Cook_mobile/blob/main/images/produtos.png" width="200px">
+  <img alt="receitas" title="receitas" src="https://github.com/JsnEvt/Cook_mobile/blob/main/images/ingredientes.png" width="200px">
+  <img alt="receitas-modos" title="modos de preparo" src="https://github.com/JsnEvt/Cook_mobile/blob/main/images/preparo.png" width="200px">
 </p>
 
 ---
@@ -64,7 +64,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/GuilhaoF/cook-app.git
+$ git clone https://github.com/JsnEvt/Cook_mobile.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd cook-app
