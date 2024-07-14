@@ -1,3 +1,6 @@
+<p>
+	<img src="./images/cover.png" alt="cover_cook_mobile"/>
+</p>
 
 <h4 align="center"> 
 	  Cook Food 🍔🥗 Concluído 🚀 
@@ -118,16 +121,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
- <br />
- <sub><b>Jason Santos</b></sub></a>🚀</a>
- <br />
+[![Linkedin Badge](https://img.shields.io/badge/-Jason-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jason-everton/)](https://www.linkedin.com/in/jason-everton/)
 
+[![Gmail Badge](https://img.shields.io/badge/-jasonemsw10@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jasonemsw10@gmail.com)](mailto:jasonemsw10@gmail.com)
 
 ---
 
 ## 📝 Licença
 
-Este projeto esta sobe a licença [MIT](./LICENSE).
+Este projeto esta sobe a licença
 
 Feito com ❤️ por Jason Santos 👋🏽 [Entre em contato!](https://www.linkedin.com/in/jason-everton/)
 
